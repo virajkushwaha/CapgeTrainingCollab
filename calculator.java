@@ -1,11 +1,15 @@
 import java.util.Scanner;
 class Calculator{
-	int add(int x,int y){
+	public static int add(int x,int y){
 		return x+y;
 	}
-	int sub(int x,int y){
+	public static int sub(int x,int y){
 		return x-y;
 	}
+	public static int div(int x,int y){
+		return x-y;
+	}
+
 	public static void main (String args[]){
 		
 		System.out.println("Enter the numbers");
@@ -21,6 +25,9 @@ class Calculator{
 		}
 		else if (op.equals("-")){
 			System.out.println("Subtraction: "+ sub(x,y));
+		}
+		else if (op.equals("/")){
+			System.out.println("Division: "+ div(x,y));
 		}
 		
 	}
