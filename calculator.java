@@ -3,6 +3,9 @@ class Calculator{
 	int add(int x,int y){
 		return x+y;
 	}
+	int sub(int x,int y){
+		return x-y;
+	}
 	public static void main (String args[]){
 		
 		System.out.println("Enter the numbers");
@@ -14,9 +17,11 @@ class Calculator{
 		String op = sc.next();
 		
 		if(op.equals("+")){
-			System.out.println(add(x,y));
+			System.out.println("Addition: "+add(x,y));
 		}
-		
+		else if (op.equals("-")){
+			System.out.println("Subtraction: "+ sub(x,y));
+		}
 		
 	}
 }
