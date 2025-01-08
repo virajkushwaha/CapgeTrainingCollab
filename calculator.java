@@ -5,14 +5,10 @@ class Calculator{
 	}
 
 
-	int multi(int x,int y){
+	public static int multi(int x,int y){
 		return x*y;
 	}
 		
-
-	int sub(int x,int y){
-		return x-y;
-	}
 
 	public static int sub(int x,int y){
 		return x-y;
